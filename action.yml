@@ -1,0 +1,17 @@
+name: 'Push source branch to destination branch'
+description: 'Overrides destination branch from source branch'
+author: '@codingentrepreneurs'
+inputs:
+  destination_branch:
+    description: 'Branch to be pushed to'
+    required: true
+  source_branch:
+    description: 'Branch to be duplicated'
+    required: true
+  commit_message:
+    description: 'Write the commit message'
+    required: false
+    default: 'Automated commit from action'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
