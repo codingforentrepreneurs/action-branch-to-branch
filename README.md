@@ -1,6 +1,6 @@
-# Commit and push to remote branch
+# Branch to Branch : Override the Destination Branch
 
-This action will commit and push to a specific remote branch. 
+This action will override a destination branch from a source branch. The purpose is to run an automated test(s) of `source_branch` and push to `dest_branch` if automated test(s) are successful.
 
 ## Inputs
 
